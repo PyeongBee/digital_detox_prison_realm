@@ -1,0 +1,57 @@
+{
+  "appName": "狱门疆",
+  "tray": {
+    "idle": "待机中 ({work}分 活动 / {break}分 封印)",
+    "working": "活动中 — 剩余 {time}",
+    "breaking": "封印中 — 剩余 {time}",
+    "start": "▶ 开始计时",
+    "pauseReset": "⏸ 暂停 / 重置",
+    "settings": "⚙ 设置",
+    "quit": "退出"
+  },
+  "warning": {
+    "mainText": "狱门疆·开门",
+    "subText": "1分钟后封印开始"
+  },
+  "overlay": {
+    "timerLabel": "剩余封印时间",
+    "releaseBtn": "解除封印",
+    "releaseReady": "可解除封印"
+  },
+  "settings": {
+    "header": "⛩ 狱门疆 设置",
+    "tabTimer": "⏱ 封印设置",
+    "tabMessages": "💬 咒语",
+    "tabVideo": "🎬 封印视频",
+    "language": "语言",
+    "languageNote": "更改语言将重置您自定义的文字设置。",
+    "presetLabel": "预设",
+    "presetNamePlaceholder": "名称",
+    "minutesActive": "分 活动 /",
+    "minutesSeal": "分 封印",
+    "minuteUnit": "分",
+    "activeTime": "活动时间",
+    "activeTimeHint": "封印前自由活动的时间",
+    "sealTime": "封印时间",
+    "sealTimeHint": "被关在狱门疆的时间",
+    "messagesLabel": "封印画面显示的文字",
+    "warningTextLabel": "警告文字",
+    "warningTextHint": "封印前1分钟在顶部显示",
+    "releaseTextLabel": "解除按钮",
+    "releaseTextHint": "封印结束后显示的按钮文字",
+    "releaseReadyLabel": "可解除文字",
+    "releaseReadyHint": "封印结束时替代计时器显示的文字",
+    "timerLabelLabel": "计时器标签",
+    "timerLabelHint": "封印画面计时器下方的文字",
+    "videoLabel": "封印视频",
+    "videoHint": "MP4 · WebM · GIF · MOV — 封印期间循环播放",
+    "videoDefault": "prison_realm_inf.mp4 (默认)",
+    "selectFile": "选择文件",
+    "resetDefault": "恢复默认",
+    "preview": "▶ 封印预览 (3秒)",
+    "previewRunning": "▶ 预览中...",
+    "savedMsg": "✓ 已确定",
+    "cancel": "取消",
+    "save": "确定"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "appName": "獄門疆",
+  "tray": {
+    "idle": "待機中 ({work}分 活動 / {break}分 封印)",
+    "working": "活動中 — 残り {time}",
+    "breaking": "封印中 — 残り {time}",
+    "start": "▶ タイマー開始",
+    "pauseReset": "⏸ 一時停止 / リセット",
+    "settings": "⚙ 設定",
+    "quit": "終了"
+  },
+  "warning": {
+    "mainText": "獄門疆・開門",
+    "subText": "1分後に封印が始まります"
+  },
+  "overlay": {
+    "timerLabel": "残り封印時間",
+    "releaseBtn": "封印解除",
+    "releaseReady": "封印解除可能"
+  },
+  "settings": {
+    "header": "⛩ 獄門疆 設定",
+    "tabTimer": "⏱ 封印設定",
+    "tabMessages": "💬 詠唱",
+    "tabVideo": "🎬 封印映像",
+    "language": "言語",
+    "languageNote": "言語を変更すると、カスタム設定した文字列がリセットされます。",
+    "presetLabel": "プリセット",
+    "presetNamePlaceholder": "名前",
+    "minutesActive": "分 活動 /",
+    "minutesSeal": "分 封印",
+    "minuteUnit": "分",
+    "activeTime": "活動時間",
+    "activeTimeHint": "封印前に自由に活動できる時間",
+    "sealTime": "封印時間",
+    "sealTimeHint": "獄門疆に閉じ込められる時間",
+    "messagesLabel": "封印画面に表示されるテキスト",
+    "warningTextLabel": "警告テキスト",
+    "warningTextHint": "封印1分前に上部に表示",
+    "releaseTextLabel": "解除ボタン",
+    "releaseTextHint": "封印終了後に表示されるボタンのテキスト",
+    "releaseReadyLabel": "解除可能テキスト",
+    "releaseReadyHint": "封印終了時にタイマーの代わりに表示",
+    "timerLabelLabel": "タイマーラベル",
+    "timerLabelHint": "封印画面のタイマー下に表示",
+    "videoLabel": "封印映像",
+    "videoHint": "MP4 · WebM · GIF · MOV — 封印中ループ再生",
+    "videoDefault": "prison_realm_inf.mp4 (デフォルト)",
+    "selectFile": "ファイル選択",
+    "resetDefault": "デフォルトに戻す",
+    "preview": "▶ 封印プレビュー (3秒)",
+    "previewRunning": "▶ プレビュー中...",
+    "savedMsg": "✓ 確定しました",
+    "cancel": "キャンセル",
+    "save": "確定"
+  }
+}

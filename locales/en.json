@@ -1,0 +1,57 @@
+{
+  "appName": "Prison Realm",
+  "tray": {
+    "idle": "Standby ({work}min active / {break}min sealed)",
+    "working": "Active — {time} left",
+    "breaking": "Sealed — {time} left",
+    "start": "▶ Start Timer",
+    "pauseReset": "⏸ Pause / Reset",
+    "settings": "⚙ Settings",
+    "quit": "Quit"
+  },
+  "warning": {
+    "mainText": "Prison Realm: Open",
+    "subText": "Sealing begins in 1 minute"
+  },
+  "overlay": {
+    "timerLabel": "Time Until Release",
+    "releaseBtn": "Release Seal",
+    "releaseReady": "Release Available"
+  },
+  "settings": {
+    "header": "⛩ Prison Realm Settings",
+    "tabTimer": "⏱ Seal Settings",
+    "tabMessages": "💬 Incantation",
+    "tabVideo": "🎬 Seal Video",
+    "language": "Language",
+    "languageNote": "Changing the language will reset your custom texts.",
+    "presetLabel": "Presets",
+    "presetNamePlaceholder": "Name",
+    "minutesActive": "min active /",
+    "minutesSeal": "min sealed",
+    "minuteUnit": "min",
+    "activeTime": "Active Time",
+    "activeTimeHint": "Free time before the seal begins",
+    "sealTime": "Seal Duration",
+    "sealTimeHint": "Time locked in the Prison Realm",
+    "messagesLabel": "Text shown on the seal screen",
+    "warningTextLabel": "Warning Text",
+    "warningTextHint": "Displayed 1 minute before sealing",
+    "releaseTextLabel": "Release Button",
+    "releaseTextHint": "Button text shown after the seal ends",
+    "releaseReadyLabel": "Release Ready Text",
+    "releaseReadyHint": "Shown in place of the timer when the seal ends",
+    "timerLabelLabel": "Timer Label",
+    "timerLabelHint": "Text below the timer on the seal screen",
+    "videoLabel": "Seal Video",
+    "videoHint": "MP4 · WebM · GIF · MOV — loops during the seal",
+    "videoDefault": "prison_realm_inf.mp4 (default)",
+    "selectFile": "Select File",
+    "resetDefault": "Reset to Default",
+    "preview": "▶ Preview Seal (3s)",
+    "previewRunning": "▶ Previewing...",
+    "savedMsg": "✓ Settings saved",
+    "cancel": "Cancel",
+    "save": "Confirm"
+  }
+}

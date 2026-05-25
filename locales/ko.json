@@ -1,0 +1,57 @@
+{
+  "appName": "옥문강",
+  "tray": {
+    "idle": "봉인 대기 중 ({work}분 활동 / {break}분 봉인)",
+    "working": "활동 중 — {time} 남음",
+    "breaking": "봉인 중 — {time} 남음",
+    "start": "▶ 타이머 시작",
+    "pauseReset": "⏸ 일시정지 / 초기화",
+    "settings": "⚙ 설정",
+    "quit": "종료"
+  },
+  "warning": {
+    "mainText": "옥문강 개문",
+    "subText": "1분 후 봉인이 시작됩니다"
+  },
+  "overlay": {
+    "timerLabel": "남은 봉인 시간",
+    "releaseBtn": "봉인 해제",
+    "releaseReady": "봉인 해제 가능"
+  },
+  "settings": {
+    "header": "⛩ 옥문강 설정",
+    "tabTimer": "⏱ 봉인 설정",
+    "tabMessages": "💬 영창",
+    "tabVideo": "🎬 봉인 영상",
+    "language": "언어",
+    "languageNote": "언어 설정을 바꾸면 커스텀 설정 문구들이 초기화됩니다.",
+    "presetLabel": "프리셋",
+    "presetNamePlaceholder": "이름",
+    "minutesActive": "분 활동 /",
+    "minutesSeal": "분 봉인",
+    "minuteUnit": "분",
+    "activeTime": "활동 시간",
+    "activeTimeHint": "봉인 전까지 자유롭게 활동하는 시간",
+    "sealTime": "봉인 시간",
+    "sealTimeHint": "옥문강에 갇혀있는 시간",
+    "messagesLabel": "봉인 화면에 표시되는 문구",
+    "warningTextLabel": "경고 문구",
+    "warningTextHint": "봉인 1분 전 상단에 표시",
+    "releaseTextLabel": "해제 버튼",
+    "releaseTextHint": "봉인 종료 후 나타나는 버튼 텍스트",
+    "releaseReadyLabel": "해제 가능 문구",
+    "releaseReadyHint": "봉인 시간이 끝났을 때 타이머 자리에 표시",
+    "timerLabelLabel": "타이머 라벨",
+    "timerLabelHint": "봉인 화면 타이머 아래 문구",
+    "videoLabel": "봉인 영상",
+    "videoHint": "MP4 · WebM · GIF · MOV — 봉인 시간 동안 루프 재생",
+    "videoDefault": "prison_realm_inf.mp4 (기본)",
+    "selectFile": "파일 선택",
+    "resetDefault": "기본으로",
+    "preview": "▶ 봉인 미리보기 (3초)",
+    "previewRunning": "▶ 미리보기 중...",
+    "savedMsg": "✓ 확정됐습니다",
+    "cancel": "취소",
+    "save": "확정"
+  }
+}
