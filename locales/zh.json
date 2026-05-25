@@ -45,7 +45,7 @@
     "timerLabelHint": "封印画面计时器下方的文字",
     "videoLabel": "封印视频",
     "videoHint": "MP4 · WebM · GIF · MOV — 封印期间循环播放",
-    "videoDefault": "prison_realm_inf.mp4 (默认)",
+    "videoDefault": "prison_realm_inf.webm (默认)",
     "selectFile": "选择文件",
     "resetDefault": "恢复默认",
     "preview": "▶ 封印预览 (3秒)",

@@ -45,7 +45,7 @@
     "timerLabelHint": "봉인 화면 타이머 아래 문구",
     "videoLabel": "봉인 영상",
     "videoHint": "MP4 · WebM · GIF · MOV — 봉인 시간 동안 루프 재생",
-    "videoDefault": "prison_realm_inf.mp4 (기본)",
+    "videoDefault": "prison_realm_inf.webm (기본)",
     "selectFile": "파일 선택",
     "resetDefault": "기본으로",
     "preview": "▶ 봉인 미리보기 (3초)",

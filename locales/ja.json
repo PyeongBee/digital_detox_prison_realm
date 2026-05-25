@@ -45,7 +45,7 @@
     "timerLabelHint": "封印画面のタイマー下に表示",
     "videoLabel": "封印映像",
     "videoHint": "MP4 · WebM · GIF · MOV — 封印中ループ再生",
-    "videoDefault": "prison_realm_inf.mp4 (デフォルト)",
+    "videoDefault": "prison_realm_inf.webm (デフォルト)",
     "selectFile": "ファイル選択",
     "resetDefault": "デフォルトに戻す",
     "preview": "▶ 封印プレビュー (3秒)",

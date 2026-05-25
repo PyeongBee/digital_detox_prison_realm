@@ -45,7 +45,7 @@
     "timerLabelHint": "Text below the timer on the seal screen",
     "videoLabel": "Seal Video",
     "videoHint": "MP4 · WebM · GIF · MOV — loops during the seal",
-    "videoDefault": "prison_realm_inf.mp4 (default)",
+    "videoDefault": "prison_realm_inf.webm (default)",
     "selectFile": "Select File",
     "resetDefault": "Reset to Default",
     "preview": "▶ Preview Seal (3s)",

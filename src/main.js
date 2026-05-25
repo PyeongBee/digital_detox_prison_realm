@@ -105,7 +105,7 @@ function showOverlay (secondsTotal) {
   const customVideo = store.get('videoPath')
   const baseUrl = customVideo
     ? pathToFileURL(customVideo).href
-    : pathToFileURL(path.join(__dirname, '..', 'assets', 'prison_realm_inf.mp4')).href
+    : pathToFileURL(path.join(__dirname, '..', 'assets', 'prison_realm_inf.webm')).href
   const videoUrl = `${baseUrl}?t=${Date.now()}`
   const { releaseText, releaseReady, timerLabel } = getSettings()
   overlayWindows.forEach((win, i) => {
@@ -321,7 +321,7 @@ ipcMain.handle('preview-overlay', async () => {
   const customVideo = store.get('videoPath')
   const baseUrl = customVideo
     ? pathToFileURL(customVideo).href
-    : pathToFileURL(path.join(__dirname, '..', 'assets', 'prison_realm_inf.mp4')).href
+    : pathToFileURL(path.join(__dirname, '..', 'assets', 'prison_realm_inf.webm')).href
   const videoUrl = `${baseUrl}?t=${Date.now()}`
   const { releaseText, releaseReady, timerLabel } = getSettings()
   overlayWindows.forEach((win, i) => {
