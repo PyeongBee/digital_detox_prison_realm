@@ -1,0 +1,18 @@
+node_modules/
+dist/
+
+# electron-store 저장 데이터
+*.json
+!package.json
+!package-lock.json
+!locales/*.json
+
+# 사용자가 선택한 커스텀 영상 복사본
+prison_custom.*
+
+# 환경 파일
+.env
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Seal entrance curtains -->
+  <div class="curtain curtain-top"></div>
+  <div class="curtain curtain-bottom"></div>
+  <div class="curtain curtain-left"></div>
+  <div class="curtain curtain-right"></div>
+
+
+  <!-- Fullscreen looping video -->
+  <video id="prisonVideo" loop playsinline></video>
+
+  <!-- Fallback for secondary displays or missing video -->
+  <div class="backdrop" id="backdrop"></div>
+
+  <!-- UI layer -->
+  <div class="ui-layer" id="uiLayer">
+    <div class="timer-wrap">
+      <div class="timer" id="timer">00:00</div>
+      <div class="timer-label" id="timerLabel"></div>
+    </div>
+    <button class="ready-btn" id="readyBtn"></button>
+  </div>
+
+  <script src="overlay.js"></script>
+</body>
+</html>

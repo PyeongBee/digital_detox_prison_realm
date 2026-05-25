@@ -1,0 +1,30 @@
+{
+  "name": "prison-realm",
+  "version": "1.0.0",
+  "description": "Detox your screen time with the Prison Realm",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.prison-realm",
+    "productName": "옥문강",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/app_icon.ico"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "locales/**/*"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^32.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "dependencies": {
+    "electron-store": "^7.0.3"
+  }
+}

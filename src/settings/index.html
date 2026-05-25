@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+  <div class="header" data-i18n="settings.header"></div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="timer"      data-i18n="settings.tabTimer"></button>
+    <button class="tab"        data-tab="messages"   data-i18n="settings.tabMessages"></button>
+    <button class="tab"        data-tab="appearance" data-i18n="settings.tabVideo"></button>
+  </div>
+
+  <!-- ── 봉인 설정 Tab ── -->
+  <div class="pane active" id="pane-timer">
+
+    <div class="field">
+      <label data-i18n="settings.language"></label>
+      <select id="langSelect" class="lang-select">
+        <option value="ko">한국어</option>
+        <option value="en">English</option>
+        <option value="ja">日本語</option>
+        <option value="zh">中文</option>
+      </select>
+      <p class="lang-note" data-i18n="settings.languageNote"></p>
+    </div>
+
+    <div class="presets-wrap">
+      <div class="section-label" data-i18n="settings.presetLabel"></div>
+      <div class="presets-row" id="presetsRow"></div>
+      <div class="add-preset-form" id="addPresetForm">
+        <input type="text"   id="presetName"  data-i18n-placeholder="settings.presetNamePlaceholder" placeholder="" maxlength="10" />
+        <input type="number" id="presetWork"  placeholder="30" min="1" max="120" value="30" />
+        <span data-i18n="settings.minutesActive"></span>
+        <input type="number" id="presetBreak" placeholder="10" min="1" max="60" value="10" />
+        <span data-i18n="settings.minutesSeal"></span>
+        <button class="btn-icon-confirm" id="btnConfirmPreset">✓</button>
+        <button class="btn-icon-cancel"  id="btnCancelPreset">✗</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>
+        <span data-i18n="settings.activeTime"></span>
+        <span class="label-hint" data-i18n="settings.activeTimeHint"></span>
+      </label>
+      <div class="slider-row">
+        <input type="range" id="workSlider" min="5" max="120" step="5" value="50" />
+        <span class="badge" id="workVal"></span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label>
+        <span data-i18n="settings.sealTime"></span>
+        <span class="label-hint" data-i18n="settings.sealTimeHint"></span>
+      </label>
+      <div class="slider-row">
+        <input type="range" id="breakSlider" min="1" max="60" step="1" value="10" />
+        <span class="badge" id="breakVal"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 영창 Tab ── -->
+  <div class="pane" id="pane-messages">
+    <div class="section-label" data-i18n="settings.messagesLabel"></div>
+
+    <div class="field">
+      <label>
+        <span data-i18n="settings.warningTextLabel"></span>
+        <span class="label-hint" data-i18n="settings.warningTextHint"></span>
+      </label>
+      <input class="text-input" type="text" id="msgWarning" maxlength="20" />
+    </div>
+
+    <div class="field">
+      <label>
+        <span data-i18n="settings.releaseTextLabel"></span>
+        <span class="label-hint" data-i18n="settings.releaseTextHint"></span>
+      </label>
+      <input class="text-input" type="text" id="msgRelease" maxlength="20" />
+    </div>
+
+    <div class="field">
+      <label>
+        <span data-i18n="settings.releaseReadyLabel"></span>
+        <span class="label-hint" data-i18n="settings.releaseReadyHint"></span>
+      </label>
+      <input class="text-input" type="text" id="msgReleaseReady" maxlength="20" />
+    </div>
+
+    <div class="field">
+      <label>
+        <span data-i18n="settings.timerLabelLabel"></span>
+        <span class="label-hint" data-i18n="settings.timerLabelHint"></span>
+      </label>
+      <input class="text-input" type="text" id="msgTimerLabel" maxlength="20" />
+    </div>
+  </div>
+
+  <!-- ── 봉인 영상 Tab ── -->
+  <div class="pane" id="pane-appearance">
+    <div class="field">
+      <label>
+        <span data-i18n="settings.videoLabel"></span>
+        <span class="label-hint" data-i18n="settings.videoHint"></span>
+      </label>
+      <div class="gif-row">
+        <span class="gif-name" id="gifName"></span>
+        <button class="btn-sm"           id="btnSelectGif" data-i18n="settings.selectFile"></button>
+        <button class="btn-sm btn-ghost" id="btnResetGif"  data-i18n="settings.resetDefault"></button>
+      </div>
+    </div>
+
+    <div class="field">
+      <button class="btn-preview" id="btnPreview" data-i18n="settings.preview"></button>
+    </div>
+  </div>
+
+  <hr class="divider" />
+  <div class="actions">
+    <span class="saved-msg" id="savedMsg" data-i18n="settings.savedMsg"></span>
+    <button class="btn-cancel" id="btnCancel" data-i18n="settings.cancel"></button>
+    <button class="btn-save"   id="btnSave"   data-i18n="settings.save"></button>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>
