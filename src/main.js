@@ -166,6 +166,7 @@ function createSettingsWindow () {
     resizable: false,
     frame: true,
     title: locale().settings.header.replace('⛩ ', ''),
+    icon: path.join(__dirname, '..', 'assets', 'app_icon.ico'),
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false

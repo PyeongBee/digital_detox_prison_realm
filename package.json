@@ -2,6 +2,7 @@
   "name": "prison-realm",
   "version": "1.0.0",
   "description": "Detox your screen time with the Prison Realm",
+  "author": "pyeongbee0806@gmail.com",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
