@@ -9,8 +9,9 @@ html, body {
   font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
 }
 
-/* ── Video ── */
-#prisonVideo {
+/* ── Video / GIF ── */
+#prisonVideo,
+#prisonGif {
   position: fixed;
   inset: 0;
   width: 100%;
@@ -21,7 +22,10 @@ html, body {
   transition: opacity 0.8s ease;
 }
 
-body.visible #prisonVideo { opacity: 1; }
+#prisonGif { display: none; }
+
+body.visible #prisonVideo,
+body.visible #prisonGif { opacity: 1; }
 
 /* ── Backdrop (secondary display / fallback) ── */
 .backdrop {

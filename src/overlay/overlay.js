@@ -2,9 +2,39 @@ const { ipcRenderer } = require('electron')
 const { getLocale }   = require('../i18n')
 
 const video      = document.getElementById('prisonVideo')
+const gif        = document.getElementById('prisonGif')
 const timerEl    = document.getElementById('timer')
 const timerLabel = document.getElementById('timerLabel')
 const readyBtn   = document.getElementById('readyBtn')
+
+function isGif (url) {
+  return url && url.split('?')[0].toLowerCase().endsWith('.gif')
+}
+
+function showMedia (url) {
+  if (isGif(url)) {
+    video.pause()
+    video.src = ''
+    video.style.display = 'none'
+    gif.src = url
+    gif.style.display = 'block'
+  } else {
+    gif.src = ''
+    gif.style.display = 'none'
+    video.style.display = 'block'
+    video.src = url
+    video.load()
+    video.play().catch(() => {})
+  }
+}
+
+function stopMedia () {
+  video.pause()
+  video.src = ''
+  gif.src = ''
+  gif.style.display = 'none'
+  video.style.display = 'block'
+}
 
 let totalSeconds       = 0
 let overlayLocale      = getLocale('ko')
@@ -36,8 +66,8 @@ ipcRenderer.on('start-break', (event, { secondsTotal, primary, videoUrl, release
   currentReleaseReady     = releaseReady || overlayLocale.overlay.releaseReady
   readyBtn.classList.remove('show')
   readyBtn.style.display = 'none'
-  video.pause()
-  video.src = ''
+  stopMedia()
+  updateTimer(secondsTotal)
 
   if (!primary) {
     document.body.classList.add('secondary')
@@ -51,11 +81,8 @@ ipcRenderer.on('start-break', (event, { secondsTotal, primary, videoUrl, release
     return
   }
 
-  // Load & play video immediately (plays behind curtains)
-  video.src = videoUrl
-  video.load()
-  video.play().catch(() => {})
-  updateTimer(secondsTotal)
+  // Load & play media immediately (plays behind curtains)
+  showMedia(videoUrl)
 
   // Trigger 4-curtain barrier seal, then reveal video
   requestAnimationFrame(() => requestAnimationFrame(() => {
@@ -82,15 +109,13 @@ ipcRenderer.on('break-done', () => {
 
 // ── user clicks ready ─────────────────────────────────────────────────────────
 readyBtn.addEventListener('click', () => {
-  video.pause()
-  video.src = ''
+  stopMedia()
   ipcRenderer.send('user-ready')
 })
 
 // ── end-break (immediate hide from main) ─────────────────────────────────────
 ipcRenderer.on('end-break', () => {
-  video.pause()
-  video.src = ''
+  stopMedia()
   readyBtn.classList.remove('show')
   readyBtn.style.display = 'none'
   document.body.classList.remove('visible')
